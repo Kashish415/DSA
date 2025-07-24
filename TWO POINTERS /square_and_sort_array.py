@@ -8,5 +8,24 @@ class Solution(object):
         sq_list.sort()                        # O(N LOG N)
 
         return sq_list
+
+# approach 2  ( double ended queue)
+class Solution(object):
+    def sortedSquares(self, nums):
+        answer = collections.deque()
+        left_ptr , right_ptr = 0, len(nums)-1
+        
+        while left_ptr <= right_ptr:
+            left_value , right_value = abs(nums[left_ptr]), abs(nums[right_ptr])
+            if left_value > right_value:
+                answer.appendleft(left_value * left_value)
+                left_ptr +=1
+            else:
+                answer.appendleft(right_value * right_value)
+                right_ptr -= 1
+
+        return list(answer)
+
     
+        
         
