@@ -8,7 +8,7 @@ class Solution(object):
         sq_list.sort()                        # O(N LOG N)
 
         return sq_list
-
+# ----------------------------------------------------------------
 # approach 2  ( double ended queue)
 class Solution(object):
     def sortedSquares(self, nums):
