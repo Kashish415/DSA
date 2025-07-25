@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/longest-mountain-in-array/
 class Solution(object):
     def longestMountain(self, arr):
         # first and last items cannot be peaks so skip checking them
