@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/3sum/
-# TLE - brute force 
+# TLE - brute force solution
 class Solution(object):
     def threeSum(self, nums):
         result = set()
