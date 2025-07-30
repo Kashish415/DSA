@@ -14,4 +14,5 @@ class Solution(object):
                 left_ptr = right_ptr
             right_ptr += 1
         return max_profit
-        
+
+
